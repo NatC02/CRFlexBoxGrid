@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Carlos Rymer Grid and Flex Box Saturday 12/05/2020</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+
+    <style> 
+    
+    /** Example for Making an Inline Element a Block Element **/
+	span {
+		display: block;
+	}
+
+	/** How to clear floats **/
+	.clearfix::after {
+	  content: "";
+	  clear: both;
+	  display: table;
+	}
+
+	/** Flexbox **/
+	.flex-container {
+		display: flex;
+		flex-flow: row nowrap;
+		justify-content: space-around;
+		align-items: center;
+	}
+
+	.hide {
+		display: none;
+	}
+
+	.pet {
+		height: 200px;
+		width: 200px;
+		background: red;
+		color: white;
+		font-size: 20px;
+		font-weight: bold;
+		padding: 10px;
+	}
+
+	.pet2 {
+		height: 500px;
+	}
+
+	.order1 {
+		order: 1;
+	}
+
+	.order2 {
+		order: 2;
+	}
+
+	.order3 {
+		order: 3;
+	}
+
+	.order4 {
+		order: 4;
+	}
+
+	/** Grid **/
+	.grid-container {
+		display: grid;
+		grid-template-columns: 50% 150px auto;
+		grid-template-rows: 25% 200px auto;
+		height: 100vh;
+	}
+
+	.cell {
+		background: blue;
+		border: 2px black solid;
+	}
+
+    </style>
+
+    <body>
+        <div class="flex-container">
+            <p class="pet order3">
+                I have a cat.
+            </p>
+        
+            <p class="pet pet2 order4">
+                I have a dog.
+            </p>
+        
+            <p class="pet order1">
+                I have a fish.
+            </p>
+        
+            <p class="pet order2">
+                I have a hamster.
+            </p>
+        </div>
+        
+        <div class="grid-container">
+            <div class="cell">
+                Bonjour!
+            </div>
+        
+            <div class="cell">
+                Comment ca va?
+            </div>
+        
+            <div class="cell">
+                Comment tu t'appelle?
+            </div>
+        
+            <div class="cell">
+                Je suis tres annoyeuse!
+            </div>
+        
+            <div class="cell">
+                Comment tu t'appelle?
+            </div>
+        
+            <div class="cell">
+                Je suis tres annoyeuse!
+            </div>
+        
+            <div class="cell">
+                Comment tu t'appelle?
+            </div>
+        
+            <div class="cell">
+                Je suis tres annoyeuse!
+            </div>
+        
+            <div class="cell">
+                Comment tu t'appelle?
+            </div>
+        </div>
+        
+        
+    </body>
+</html>
